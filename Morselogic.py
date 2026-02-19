@@ -99,8 +99,8 @@ class Converter:
                 #gap between characters within letters    
                 time.sleep(self.unit / 1000) #time class uses seconds by default, units are in ms
 
-            #new letter
-            time.sleep(self.unit * 3 / 1000)
+            #new letter, gap is 3 units
+            time.sleep(self.unit * 0.003)
         
         return
 

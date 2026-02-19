@@ -84,7 +84,7 @@ class mainWindow:
         else:
             self.winLoseLabel.config(text = "kill yourself!!")
 
-        self.inputBox.insert("1.0", "")
+        self.inputBox.delete("1.0", END)
 
 
     def playAgain(self):
@@ -92,9 +92,3 @@ class mainWindow:
 
     def run(self):
         self.window.mainloop()
-
-
-if __name__ == "__main__":
-
-    testing = mainWindow()
-    testing.run()
